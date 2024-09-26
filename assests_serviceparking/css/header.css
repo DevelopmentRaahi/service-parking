@@ -1048,6 +1048,7 @@ h6 {
   display: flex;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 
 #hero::before {
@@ -1055,9 +1056,10 @@ h6 {
   content: "";
   position: absolute;
   top: 0;
-  right: 0;
-  width: 20%;
+  right: -5%;
+  width: 15%;
   height: 100%;
+  transform: rotate(0deg) skewX(10deg);
 }
 
 #hero .main-hero {
@@ -1073,31 +1075,32 @@ h6 {
 #hero .hero-heading {
   font-size: 2.4rem;
   line-height: 3.5rem;
-
+  font-family: "Raleway", sans-serif;
   text-transform: capitalize;
   font-weight: 500;
   color: #3b3b3b;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 #hero .hero-heading span {
   font-size: 5.2rem;
-  letter-spacing: 2px;
+  /* letter-spacing: 2px; */
   color: rgb(46, 46, 46);
   font-weight: 600;
 }
 
 #hero p {
-
-  margin-top: 20px;
-  font-size: 1.4rem;
+  width: 60%;
+  margin-top: 10px;
+  font-size: 1.3rem;
   position: relative;
-  width: fit-content;
+  font-family: "Raleway", sans-serif;
+  opacity: 0.8;
 }
 
 #hero p::after {
   content: "";
-  width: 100%;
+  width: 84%;
   height: 10%;
   position: absolute;
   bottom: -5px;
