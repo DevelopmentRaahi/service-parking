@@ -1194,8 +1194,8 @@ h6 {
 
 #servicesTitle p::after {
   content: "";
-  height: 8%;
-  width: 100%;
+  height: 6%;
+  width:200px;
   position: absolute;
   bottom: -5%;
   left: 0;
