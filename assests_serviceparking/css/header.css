@@ -1101,9 +1101,9 @@ h6 {
 #hero p::after {
   content: "";
   width: 84%;
-  height: 10%;
+  height: 5%;
   position: absolute;
-  bottom: -5px;
+  bottom: -20px;
   left: 0;
   transform: scaleX(0.021);
   transform-origin: left;
@@ -1117,45 +1117,49 @@ h6 {
 }
 
 @media screen and (max-width: 767px) {
-   #hero{
-     height: 25%;
-     overflow: hidden;
-   }
-   #hero::before{
+  #hero {
+    padding: 3rem 0;
+    height: 25%;
+    overflow: hidden;
+  }
+
+  #hero::before {
     width: 30%;
     right: -10%;
     transform: rotate(0deg) skewX(10deg);
-    
-   }
+
+  }
+
   #hero .main-hero {
-    width: 90%; 
+    width: 90%;
   }
+
   #hero .main-hero::before {
-    transform: rotateX(10deg);    
+    transform: rotateX(10deg);
   }
-  
+
   #hero .hero-heading {
     font-size: 1rem;
     line-height: 1.6rem;
     margin-bottom: .7rem;
     width: 80%;
     font-weight: 400;
-   letter-spacing: 0;
+    letter-spacing: 0;
   }
 
-  #hero .hero-heading span {   
+  #hero .hero-heading span {
     font-size: 2.4rem;
-    width: 100%; 
+    width: 100%;
     font-weight: 500;
     letter-spacing: 0;
   }
 
   #hero p {
-     margin-top: 10px;
-     width: 70%;
-     font-size: 1rem;
-     font-family: 'Inter', sans-serif;
-     /* display: none; */
+    margin-top: 10px;
+    width: 70%;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    /* display: none; */
   }
 
   #hero p::after {
@@ -1165,8 +1169,92 @@ h6 {
     height: 5%;
     transform: scaleX(0.2);
   }
+
   #hero:hover p::after {
-  transform: scaleX(0.3);
-  transition: all 0.5s linear;
+    transform: scaleX(0.3);
+    transition: all 0.5s linear;
+  }
 }
+
+#services1 {
+  padding: 0.5rem 0;
+  /* background-color: red; */
+}
+
+#servicesTitle h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#servicesTitle p {
+  position: relative;
+  width: fit-content;
+}
+
+#servicesTitle p::after {
+  content: "";
+  height: 8%;
+  width: 100%;
+  position: absolute;
+  bottom: -5%;
+  left: 0;
+  background-color: rgba(5, 98, 123, 0.594);
+  transform: scaleX(0.24);
+  transform-origin: left;
+}
+
+#service-contain {
+  padding: 10px;
+}
+
+#service-contain>div {
+  height: fit-content;
+  width: max-content;
+  /* background-color: gray; */
+  border: 2px solid gray;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+#s-part {
+  padding: 1rem;
+  text-align: center;
+  font-family: "roboto";
+}
+
+#s-part .s-title {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+#s-part .s-button {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+#s-part .s-button a {
+  margin: 5px;
+  background-color: rgb(6, 6, 6);
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 50px;
+  justify-self: center;
+  align-self: center;
+  font-size: 14px;
+  border: 1px solid #434343;
+  transition: all 0.5s;
+}
+
+#s-part .s-button a:nth-of-type(2n) {
+  background-color: rgb(1, 50, 119);
+}
+
+#s-part .s-button a:is(:hover, :active) {
+  background-color: #fff;
+  color: #000;
 }
