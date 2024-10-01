@@ -1195,7 +1195,7 @@ h6 {
 #servicesTitle p::after {
   content: "";
   height: 6%;
-  width:200px;
+  width: 200px;
   position: absolute;
   bottom: -5%;
   left: 0;
@@ -1257,4 +1257,59 @@ h6 {
 #s-part .s-button a:is(:hover, :active) {
   background-color: #fff;
   color: #000;
+}
+
+#service-list ol li {
+  font-size: 1.5rem;
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+ #service-list ol li span a {
+  margin: 5px;
+  background-color:rgb(77 75 75);
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 50px;
+  justify-self: center;
+  align-self: center;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #434343;
+  transition: all 0.5s;
+}
+
+#service-list ol li span a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+#service-list ol li span a:nth-of-type(2n) {
+  background-color:rgb(67 100 147);
+}
+
+#service-list ol li span a:nth-of-type(2n):hover {
+  color: #fff;
+  background-color: rgb(57, 119, 207);
+}
+
+@media screen and (max-width: 767px) {
+  #service-list ol li {
+  font-size: 1.4rem;
+  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#service-list ol li span{
+  display: flex;
+  justify-content: flex-end;
+}
+#service-list ol li span a{
+  font-size:12px ;
+  padding: 4px 10px;
+  border-radius: 5px;
+  margin-right: 4px;
+}
 }
