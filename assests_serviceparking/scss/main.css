@@ -706,9 +706,13 @@ body {
   font-size: 1.2rem;
   font-weight: 600;
   color: #099f7c;
+  transition: all 0.4s linear;
 }
 .offer_section_bg .main_button_two a:hover {
   color: #066f56;
+  text-decoration: underline;
+  transform: scale(1.1);
+  transition: all 0.4s linear;
 }
 
 .price_end {
@@ -994,10 +998,14 @@ body {
   color: rgb(47, 78, 126);
   font-weight: 600;
   font-size: 2.3rem;
+  margin-bottom: 30px;
 }
 .main_box-1 p {
   text-align: center;
   color: rgb(64, 58, 85);
+  font-size: 1.3rem;
+  width: 80%;
+  margin: 0 auto;
 }
 .main_box-1 > * {
   margin-top: 2.5rem;

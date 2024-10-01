@@ -980,9 +980,13 @@ $add_cart_color: #4e84c6;
             font-size: 1.2rem;
             font-weight: 600;
             color: $btn_pric_color;
+            transition: all 0.4s linear;
 
             &:hover {
                 color: darken($color: $btn_pric_color, $amount: 10);
+                text-decoration: underline;
+                transform: scale(1.1);
+                transition: all 0.4s linear;
             }
         }
     }
@@ -1316,11 +1320,15 @@ $add_cart_color: #4e84c6;
       color: $heading_color;
       font-weight: 600;
       font-size: 2.3rem;
+      margin-bottom: 30px;
     }
 
     p {
       text-align: center;
       color: $heading_para_color;
+      font-size: 1.3rem;
+      width: 80%;
+      margin: 0 auto;
     }
 
     & > * {
