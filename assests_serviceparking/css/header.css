@@ -1265,6 +1265,7 @@ h6 {
   display: flex;
   justify-content: space-between;
   cursor: pointer;
+  text-transform: capitalize;
 }
 
  #service-list ol li span a {
