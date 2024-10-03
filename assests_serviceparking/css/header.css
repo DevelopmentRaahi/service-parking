@@ -1399,10 +1399,15 @@ h6 {
           padding: 3rem 1rem;
         }
         #fs-feature .fs-title{
-          font-size: 2.1rem;
+          font-size: 2rem;
           padding-inline: 5% ;
           margin-bottom: 1vh;
           
+        }
+        #fs-feature .fs-title::after{
+          width:8%;
+          height: 0.2rem;
+          margin-left: 0.2vw;
         }
       .fs-box h4{
         margin-bottom: 1rem;
