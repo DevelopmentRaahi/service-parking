@@ -1418,7 +1418,7 @@ h6 {
         font-size: 1.2rem;
       }
     }
-     @media screen and (max-width:600px) {
+    @media screen and (max-width:600px) {
       .fs-boxes{
         display: flex;
         flex-direction: column;
@@ -1429,13 +1429,13 @@ h6 {
           height: 20rem;
           padding: 3rem 1rem;
         }
-      }
-     @media screen and (max-width:450px) {
+    }
+    @media screen and (max-width:450px) {
 
         #fs-feature .fs-box{
           width: 90%;
           height: 20rem;
           padding: 3rem 1rem;
         }
-      }
+    }
     
