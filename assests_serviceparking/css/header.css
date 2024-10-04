@@ -1317,3 +1317,143 @@ h6 {
 }
 }
 
+/* feature section start from here */
+ #fs-feature {
+      padding: 4vw 0;
+      background-color: rgba(200, 200, 200, 0.212);
+    }
+
+    #fs-feature .fs-title {
+      font-size: 2.3vw;
+      font-weight: 600;
+      margin: 2rem 0 3rem 0;
+      position: relative;
+      text-transform: uppercase;  
+      font-size: "Poppins", sans-serif;
+      color:rgb(59 59 59);
+    }
+     #fs-feature .fs-title::after{
+      content: "";
+      display:  inline-block;
+      height: 0.3rem;
+      width: 5rem;
+      margin-left: 0.2vw;
+      position: absolute;
+      top: 50%;
+      background-color: rgba(59, 59, 59, 0.413);   
+     border-radius: 2px;
+     }
+    #fs-feature .fs-box {
+      background-color: rgb(255, 255, 255);
+      /* height: 23rem; */
+      /* width: 23%; */
+      padding: 3rem 2rem;
+      margin: 10px;
+      border-radius: 10px;
+     border: 1px solid rgba(128, 128, 128, 0.318);
+     transition: all 0.5s;
+    }
+    #fs-feature .fs-box:nth-child(2n):hover {
+      background-color: #fad8a23e;
+      box-shadow: 5px 3px 7px rgba(0, 0, 0, 0.196),
+      -5px -3px 7px rgba(255, 255, 255, 0.2);
+    }
+    #fs-feature .fs-box:first-child:hover {
+      background-color: #a2eafa3e;
+       box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.196),
+      -5px -5px 7px rgba(255, 255, 255, 0.2);
+    }
+    #fs-feature .fs-box:nth-child(3n):hover {
+      background-color: #faf3a23e;
+       box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.196),
+      -5px -5px 7px rgba(255, 255, 255, 0.2);
+    }
+    .fs-box i{
+      font-size: 2.6rem;
+      margin-bottom: 1.7rem;
+      color: rgba(79, 79, 79, 0.612);
+    }
+    .fs-box h4{
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: rgb(29, 33, 35);
+    }
+    .fs-box p{
+      font-size: 1.4rem;
+    }
+
+
+    @media screen and (min-width:767px) {
+        #fs-feature .fs-box{
+          width: 46%;
+          height: 20rem;
+          padding: 2rem ;
+        } 
+        #fs-feature .fs-title{
+          font-size: 2.3rem;
+        }
+    }
+    @media screen and (min-width:992px) {
+        #fs-feature .fs-box{
+          width: 30%;
+          height: 20rem;
+          padding: 2rem ;
+        } 
+
+    }
+    @media screen and (min-width:1200px) {
+        #fs-feature .fs-box{
+          width: 23%;
+          height: 20rem;
+          padding: 2rem ;
+        } 
+        
+    }
+    @media screen and (max-width: 767px) {
+        #fs-feature .fs-box{
+          width: 45%;
+          height: 20rem;
+          padding: 3rem 1rem;
+        }
+        #fs-feature .fs-title{
+          font-size: 2rem;
+          padding-inline: 5% ;
+          margin-bottom: 1vh;
+          
+        }
+        #fs-feature .fs-title::after{
+          width:8%;
+          height: 0.2rem;
+          margin-left: 0.2vw;
+        }
+      .fs-box h4{
+        margin-bottom: 1rem;
+        font-size: 1.4rem;
+       
+      }
+      .fs-box p{
+        font-size: 1.2rem;
+      }
+    }
+    @media screen and (max-width:600px) {
+      .fs-boxes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+        #fs-feature .fs-box{
+          width: 80%;
+          height: 20rem;
+          padding: 3rem 1rem;
+        }
+    }
+    @media screen and (max-width:450px) {
+
+        #fs-feature .fs-box{
+          width: 90%;
+          height: 20rem;
+          padding: 3rem 1rem;
+        }
+    }
+    
