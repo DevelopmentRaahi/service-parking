@@ -1119,7 +1119,7 @@ h6 {
 @media screen and (max-width: 767px) {
   #hero {
     padding: 3rem 0;
-    height: 25%;
+    height: 30%;
     overflow: hidden;
   }
 
@@ -1270,7 +1270,8 @@ h6 {
 
  #service-list ol li span a {
   margin: 5px;
-  background-color:rgb(77 75 75);
+  /* background-color:rgb(77 75 75); */
+  background-color: #ffa600;
   color: #fff;
   padding: 5px 15px;
   border-radius: 50px;
@@ -1315,3 +1316,4 @@ h6 {
   margin-right: 4px;
 }
 }
+
