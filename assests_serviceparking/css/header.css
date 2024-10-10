@@ -1562,14 +1562,14 @@ h6 {
     border-radius: 5px;   
     text-align: center;
     color: rgb(5, 81, 152);
-    font-size: 1.2rem;
+    font-size: 1vw;
     transition: all 0.5s; 
     font-weight:400;
     /* background-color: red; */    
    }
    .slider .list .item img:hover + h4{
     bottom: -3px;
-    scale: 1.1;    
+      
     color: white;
     background-color: rgb(250, 82, 9);
    }
