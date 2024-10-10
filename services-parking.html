@@ -656,15 +656,15 @@
     </div> -->
   <!-- </section> /Services Section -->
 
-<div class="container-fluid py-5" id="si-tg">
-   <div class="si-text px-3 text-center"> Services We Offer</div>
+  <div class="container-fluid py-5" id="si-tg">
+    <div class="si-text px-3 text-center"> Services We Offer</div>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-xl-4 g-4 row-cols-lg-3  p-3" id="services-image">
       <div class="col">
         <img src="./assests_serviceparking/img/services/1.jpeg" class="img-fluid" alt="">
       </div>
       <div class="col">
         <img src="./assests_serviceparking/img/services/2.jpeg" class="img-fluid" alt="">
-      </div>      
+      </div>
       <div class="col">
         <img src="./assests_serviceparking/img/services/4.jpeg" class="img-fluid" alt="">
       </div>
@@ -687,53 +687,19 @@
   </div>
 
   <style>
-    #scrll{
+    #scrll {
       padding: 4rem 0;
     }
-     #scrll .sw-text{
-       font-size: 2rem;
-       font-weight: 600;
-       color: #043a8b;
-       text-transform: uppercase;
-       font-family: "Poppins", sans-serif;
-     }
-     #scroller-image{
-       display: flex;
-       flex-wrap: nowrap;
-       overflow-x: auto;
-       -ms-overflow-style: none;  /* IE and Edge */
-       scrollbar-width: none;  /* Firefox */
-     }
-     #scroller-image::-webkit-scrollbar {
-       display: none;
-     }
-     #scroller-image .img-slider{
-      width: 100%;
-       padding: 2rem 0;
-      flex-shrink: 0;
-       display: inline-block;
-       width: fit-content;
-       height: 20rem; 
-       position: relative;  
-       animation: move 25s linear infinite; 
-     }
-      #scroller-image .img-slider img{
-        width: 15rem;
-        height: 15rem;
-        object-fit: cover;
-        border-radius: 10px;
-        border: 2px solid #00000016;
-        margin-right:20px ;
-         
-      }
-      @keyframes move {
-        0% {
-          transform: translateX(0);
-        }
-        100% {
-          transform: translateX(calc(-100% - 20px - 4px));
-        }
-      }
+
+    #scrll .sw-text {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #043a8b;
+      text-transform: uppercase;
+      font-family: "Poppins", sans-serif;
+    }
+
+   
   </style>
 
   <div class="container-fluid" id="scrll">
@@ -741,31 +707,28 @@
       <div class="col-lg-12">
         <div class="sw-text px-3 text-center"> Services We Offer</div>
       </div>
-     </div>
-     
-     <div class="row" id="scroller-image">
-      <div class=" img-slider">
-        <img src="./assests_serviceparking/img/services/1.jpeg" class="img-fluid" alt="">
-        <img src="./assests_serviceparking/img/services/2.jpeg" class="img-fluid" alt="">
-        <img src="./assests_serviceparking/img/services/3.jpeg" class="img-fluid" alt="">
-        <img src="./assests_serviceparking/img/services/4.jpeg" class="img-fluid" alt="">
-        <img src="./assests_serviceparking/img/services/5.jpeg" class="img-fluid" alt="">
-        <img src="./assests_serviceparking/img/services/6.jpeg" class="img-fluid" alt="">
-        <img src="./assests_serviceparking/img/services/7.jpeg" class="img-fluid" alt="">
-        <img src="./assests_serviceparking/img/services/8.jpg"  class="img-fluid" alt="">
-      </div>
-      <div class=" img-slider">
-        <img src="./assests_serviceparking/img/services/1.jpeg" class="img-fluid" alt="">
-        <img src="./assests_serviceparking/img/services/2.jpeg" class="img-fluid" alt="">
-        <img src="./assests_serviceparking/img/services/3.jpeg" class="img-fluid" alt="">
-        <img src="./assests_serviceparking/img/services/4.jpeg" class="img-fluid" alt="">
-        <img src="./assests_serviceparking/img/services/5.jpeg" class="img-fluid" alt="">
-        <img src="./assests_serviceparking/img/services/6.jpeg" class="img-fluid" alt="">
-        <img src="./assests_serviceparking/img/services/7.jpeg" class="img-fluid" alt="">
-        <img src="./assests_serviceparking/img/services/8.jpg"  class="img-fluid" alt="">
-      </div>
-     </div>
+    </div>    
   </div>
+
+<div class="container-fluid">
+  <div class="slider" id="scroller-image" 
+    style="
+      --width: 12vw;
+      --height: 12vw;
+      --qnty: 8;
+    ">
+      <div class="list">
+       <div class="item" style="--position: 1"> <img src="./assests_serviceparking/img/services/1.jpeg" class="img-fluid" alt=""></div>
+       <div class="item" style="--position:2 "> <img src="./assests_serviceparking/img/services/2.jpeg" class="img-fluid" alt=""></div>
+       <div class="item" style="--position:3 "> <img src="./assests_serviceparking/img/services/3.jpeg" class="img-fluid" alt=""></div>
+       <div class="item" style="--position: 4"> <img src="./assests_serviceparking/img/services/4.jpeg" class="img-fluid" alt=""></div>
+       <div class="item" style="--position:5 "> <img src="./assests_serviceparking/img/services/5.jpeg" class="img-fluid" alt=""></div>
+       <div class="item" style="--position: 6"> <img src="./assests_serviceparking/img/services/6.jpeg" class="img-fluid" alt=""></div>
+       <div class="item" style="--position:7 "> <img src="./assests_serviceparking/img/services/7.jpeg" class="img-fluid" alt=""></div>
+       <div class="item" style="--position:8 "> <img src="./assests_serviceparking/img/services/8.jpg" class="img-fluid" alt=""></div>
+      </div>
+  </div>
+</div>
 
 
   <!-- 7 days offer -->
