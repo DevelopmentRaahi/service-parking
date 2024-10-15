@@ -686,55 +686,6 @@
     </div>
   </div> -->
 
-<style>
-  .grid-images{
-    padding: 1vw 0;
-    background-color: rgb(255, 255, 255);
-  }
-      .img-grid {
-        width: 100%;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns:repeat(4, minmax(25%, 1fr));
-        grid-gap: 10px;
-        align-content: center;
-        align-items: center;
-        
-      }
-      .img-grid img {
-        display: block;
-        width: 60%;
-        height: fit-content;
-        object-fit: cover;
-        justify-self: center;
-        align-self: center;
-       
-      }
-      @media screen and (max-width:600px) {
-        .img-grid img{
-          width: 90%;
-        }
-         .img-grid {
-          gap: 5px;
-         }
-      }
-    </style>
-  <div class="container-fluid grid-images">
-    <div class="container"> 
-    <div class="row">
-      <div class="img-grid grid">
-        <img src="./assests_serviceparking/img/logos/2.png" class="img-fluid" alt="">
-        <img src="./assests_serviceparking/img/logos/3.png" class="img-fluid" alt="">
-        <img src="./assests_serviceparking/img/logos/4.png" class="img-fluid" alt="">
-        <img src="./assests_serviceparking/img/logos/5.png" class="img-fluid" alt="">
-        <img src="./assests_serviceparking/img/logos/6.png" class="img-fluid" alt="">
-        <img src="./assests_serviceparking/img/logos/7.png" class="img-fluid" alt="">
-        <img src="./assests_serviceparking/img/logos/1.png" class="img-fluid" alt="">
-      </div>
-     </div>
-  </div>
-  </div>
-
   <style>
     #scrll {
       padding: 4rem 0;
@@ -832,6 +783,60 @@
   </div>
 
   <!-- 30 days offer end -->
+
+<style>
+  .grid-images{
+    padding: 1vw 0;
+    background-color: rgb(255, 255, 255);
+  }
+      .img-grid {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns:repeat(4, minmax(25%, 1fr));
+        grid-gap: 10px;
+        align-content: center;
+        align-items: center;
+        transition: all 0.5s ease-in-out;
+      }
+      .img-grid:hover img:not(:hover) {
+        filter: grayscale(100%);
+        scale: 0.9;
+        
+      }
+      .img-grid img {
+        display: block;
+        width: 60%;
+        height: fit-content;
+        object-fit: cover;
+        justify-self: center;
+        align-self: center;
+        transition: all 0.5s ease-in-out;
+      }
+      @media screen and (max-width:600px) {
+        .img-grid img{
+          width: 90%;
+        }
+         .img-grid {
+          gap: 5px;
+         }
+      }
+    </style>
+  <div class="container-fluid grid-images">
+    <div class="container"> 
+    <div class="row">
+      <div class="img-grid grid">
+        <img src="./assests_serviceparking/img/logos/2.png" class="img-fluid" alt="">
+        <img src="./assests_serviceparking/img/logos/3.png" class="img-fluid" alt="">
+        <img src="./assests_serviceparking/img/logos/4.png" class="img-fluid" alt="">
+        <img src="./assests_serviceparking/img/logos/5.png" class="img-fluid" alt="">
+        <img src="./assests_serviceparking/img/logos/6.png" class="img-fluid" alt="">
+        <img src="./assests_serviceparking/img/logos/7.png" class="img-fluid" alt="">
+        <img src="./assests_serviceparking/img/logos/1.png" class="img-fluid" alt="">
+      </div>
+     </div>
+  </div>
+  </div>
 
 
   <!-- whatshap btn -->
