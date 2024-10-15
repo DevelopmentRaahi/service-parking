@@ -820,6 +820,11 @@
          .img-grid {
           gap: 5px;
          }
+         .img-grid:hover img:not(:hover) {
+        filter: grayscale(0);
+        scale: 1;
+        
+      }
       }
     </style>
   <div class="container-fluid grid-images">
