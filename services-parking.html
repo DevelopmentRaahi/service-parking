@@ -801,8 +801,7 @@
       }
       .img-grid:hover img:not(:hover) {
         filter: grayscale(100%);
-        scale: 0.9;
-        
+        scale:0.9;        
       }
       .img-grid img {
         display: block;
@@ -815,10 +814,12 @@
       }
       @media screen and (max-width:600px) {
         .img-grid img{
-          width: 90%;
+          width: 70%;
         }
          .img-grid {
-          gap: 5px;
+          padding: 20px 0;
+          gap: 10px;
+          grid-template-columns:repeat(3, minmax(25%, 1fr));
          }
          .img-grid:hover img:not(:hover) {
         filter: grayscale(0);
