@@ -696,10 +696,8 @@
       font-weight: 700;
       color: #043a8b;
       text-transform: uppercase;
-      
-    }
 
-   
+    }
   </style>
 
   <div class="container-fluid" id="scrll">
@@ -707,53 +705,52 @@
       <div class="col-lg-12">
         <div class="sw-text px-3 text-center"> Services We Offer</div>
       </div>
-    </div>    
+    </div>
   </div>
 
-<div class="container-fluid">
-  <div class="slider" id="scroller-image" 
-    style="
+  <div class="container-fluid">
+    <div class="slider" id="scroller-image" style="
       --width: 12vw;
       --height: 12vw;
       --qnty: 8;
     ">
       <div class="list">
-       <div class="item" style="--position: 1">
-         <img src="./assests_serviceparking/img/services/1.jpeg" class="img-fluid" alt="">
-         <h4>Email</h4>        
+        <div class="item" style="--position: 1">
+          <img src="./assests_serviceparking/img/services/1.jpeg" class="img-fluid" alt="">
+          <h4>Email</h4>
         </div>
-       <div class="item" style="--position:2 "> 
-        <img src="./assests_serviceparking/img/services/2.jpeg" class="img-fluid" alt="">
-        <h4>backup and security</h4>
-      </div>
-       <div class="item" style="--position:3 "> 
-        <img src="./assests_serviceparking/img/services/3.jpeg" class="img-fluid" alt="">
-        <h4 class="text">SSL</h4>
+        <div class="item" style="--position:2 ">
+          <img src="./assests_serviceparking/img/services/2.jpeg" class="img-fluid" alt="">
+          <h4>backup and security</h4>
+        </div>
+        <div class="item" style="--position:3 ">
+          <img src="./assests_serviceparking/img/services/3.jpeg" class="img-fluid" alt="">
+          <h4 class="text">SSL</h4>
 
-      </div>
-       <div class="item" style="--position: 4">
-         <img src="./assests_serviceparking/img/services/4.jpeg" class="img-fluid" alt="">
-         <h4>Server and cloud</h4>
         </div>
-       <div class="item" style="--position:5 "> 
-        <img src="./assests_serviceparking/img/services/5.jpeg" class="img-fluid" alt="">
-        <h4>Window hosting</h4>
-      </div>
-       <div class="item" style="--position: 6"> 
-        <img src="./assests_serviceparking/img/services/6.jpeg" class="img-fluid" alt="">
-        <h4>Linux hosting</h4>
-      </div>
-       <div class="item" style="--position:7 ">
-         <img src="./assests_serviceparking/img/services/7.jpeg" class="img-fluid" alt="">
-         <h4>VPS Hosting</h4>
+        <div class="item" style="--position: 4">
+          <img src="./assests_serviceparking/img/services/4.jpeg" class="img-fluid" alt="">
+          <h4>Server and cloud</h4>
         </div>
-       <div class="item" style="--position:8 "> 
-        <img src="./assests_serviceparking/img/services/8.jpg" class="img-fluid" alt="">
-        <h4>Dedicated Hosting</h4>
+        <div class="item" style="--position:5 ">
+          <img src="./assests_serviceparking/img/services/5.jpeg" class="img-fluid" alt="">
+          <h4>Window hosting</h4>
+        </div>
+        <div class="item" style="--position: 6">
+          <img src="./assests_serviceparking/img/services/6.jpeg" class="img-fluid" alt="">
+          <h4>Linux hosting</h4>
+        </div>
+        <div class="item" style="--position:7 ">
+          <img src="./assests_serviceparking/img/services/7.jpeg" class="img-fluid" alt="">
+          <h4>VPS Hosting</h4>
+        </div>
+        <div class="item" style="--position:8 ">
+          <img src="./assests_serviceparking/img/services/8.jpg" class="img-fluid" alt="">
+          <h4>Dedicated Hosting</h4>
+        </div>
       </div>
-      </div>
+    </div>
   </div>
-</div>
 
 
   <!-- 7 days offer -->
@@ -784,64 +781,113 @@
 
   <!-- 30 days offer end -->
 
-<style>
-  .grid-images{
-    padding: 1vw 0;
-    background-color: rgb(255, 255, 255);
-  }
-      .img-grid {
-        width: 100%;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns:repeat(4, minmax(25%, 1fr));
-        grid-gap: 10px;
-        align-content: center;
-        align-items: center;
-        transition: all 0.5s ease-in-out;
-      }
-      .img-grid:hover img:not(:hover) {
-        filter: grayscale(100%);
-        scale:0.9;        
-      }
+  <style>
+    .grid-images {
+      padding: 1vw 0;
+      background-color: rgb(255, 255, 255);
+    }
+
+    .img-grid {
+      width: 100%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(25%, 1fr));
+      grid-gap: 10px;
+      align-content: center;
+      align-items: center;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .img-grid:hover img:not(:hover) {
+      filter: grayscale(100%);
+      scale: 0.9;
+    }
+
+    .img-grid img {
+      display: block;
+      width: 60%;
+      height: fit-content;
+      object-fit: cover;
+      justify-self: center;
+      align-self: center;
+      transition: all 0.5s ease-in-out;
+    }
+    .img-grid .g_img{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      overflow: hidden;
+    }
+    .img-grid .g_img::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -70%;
+      width: 50%;
+      height: 100%;
+      z-index: 2;
+      transform: skewX(-25deg);
+      background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+      visibility: hidden;   
+      transition: all 0.5s ease-in-out; 
+    }
+    .img-grid .g_img:hover::before{
+       animation: shine .75s linear;      
+    }
+    @keyframes shine {
+    100% {
+      left: 125%;
+      visibility: visible;
+    }
+}
+
+    @media screen and (max-width:600px) {
       .img-grid img {
-        display: block;
-        width: 60%;
-        height: fit-content;
-        object-fit: cover;
-        justify-self: center;
-        align-self: center;
-        transition: all 0.5s ease-in-out;
+        width: 70%;
       }
-      @media screen and (max-width:600px) {
-        .img-grid img{
-          width: 70%;
-        }
-         .img-grid {
-          padding: 20px 0;
-          gap: 10px;
-          grid-template-columns:repeat(3, minmax(25%, 1fr));
-         }
-         .img-grid:hover img:not(:hover) {
+
+      .img-grid {
+        padding: 20px 0;
+        gap: 10px;
+        grid-template-columns: repeat(3, minmax(25%, 1fr));
+      }
+
+      .img-grid:hover img:not(:hover) {
         filter: grayscale(0);
         scale: 1;
-        
+
       }
-      }
-    </style>
+    }
+  </style>
   <div class="container-fluid grid-images">
-    <div class="container"> 
-    <div class="row">
-      <div class="img-grid grid">
-        <img src="./assests_serviceparking/img/logos/2.png" class="img-fluid" alt="">
-        <img src="./assests_serviceparking/img/logos/3.png" class="img-fluid" alt="">
-        <img src="./assests_serviceparking/img/logos/4.png" class="img-fluid" alt="">
-        <img src="./assests_serviceparking/img/logos/5.png" class="img-fluid" alt="">
-        <img src="./assests_serviceparking/img/logos/6.png" class="img-fluid" alt="">
-        <img src="./assests_serviceparking/img/logos/7.png" class="img-fluid" alt="">
-        <img src="./assests_serviceparking/img/logos/1.png" class="img-fluid" alt="">
+    <div class="container">
+      <div class="row">
+        <div class="img-grid grid">
+          <div class="g_img">
+            <img src="./assests_serviceparking/img/logos/2.png" class="img-fluid" alt="">
+          </div>
+          <div class="g_img">
+            <img src="./assests_serviceparking/img/logos/3.png" class="img-fluid" alt="">
+          </div>
+          <div class="g_img">
+            <img src="./assests_serviceparking/img/logos/4.png" class="img-fluid" alt="">
+          </div>
+          <div class="g_img">
+            <img src="./assests_serviceparking/img/logos/5.png" class="img-fluid" alt="">
+          </div>
+          <div class="g_img">
+            <img src="./assests_serviceparking/img/logos/6.png" class="img-fluid" alt="">
+          </div>
+          <div class="g_img">
+            <img src="./assests_serviceparking/img/logos/7.png" class="img-fluid" alt="">
+          </div>
+          <div class="g_img">
+            <img src="./assests_serviceparking/img/logos/1.png" class="img-fluid" alt="">
+          </div>
+        </div>
       </div>
-     </div>
-  </div>
+    </div>
   </div>
 
 
