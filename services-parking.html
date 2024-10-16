@@ -798,9 +798,10 @@
       transition: all 0.5s ease-in-out;
     }
 
-    .img-grid:hover img:not(:hover) {
+    .img-grid:hover .g_img:not(:hover) {
       filter: grayscale(100%);
       scale: 0.9;
+      transition: all 0.5s ease-in;
     }
 
     .img-grid img {
@@ -810,7 +811,7 @@
       object-fit: cover;
       justify-self: center;
       align-self: center;
-      transition: all 0.5s ease-in-out;
+     
     }
     .img-grid .g_img{
       position: relative;
@@ -818,6 +819,7 @@
       height: 100%;
       display: grid;
       overflow: hidden;
+      transition: all 0.5s ease-in;
     }
     .img-grid .g_img::before{
       content: "";
