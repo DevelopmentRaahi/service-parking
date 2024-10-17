@@ -844,9 +844,36 @@
     }
 }
 
+    .gi-text {
+      padding: 25px 0;
+      text-align: center;
+    }
+    .gi-text h4{
+       color: rgb(47, 78, 126) ;
+      font-weight: 600;
+      font-size: 2.3rem;
+      margin-bottom: 30px;    
+      position: relative;
+    }
+    .gi-text h4::after{
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 20%;
+        height: 2px;
+        background-color: rgba(60, 59, 59, 0.404);
+        transform: translateX(-50%);
+    }
+
     @media screen and (max-width:600px) {
       .img-grid img {
         width: 70%;
+      }
+       .gi-text h4{
+        font-size: 1.5rem;
+          text-transform: uppercase;
       }
 
       .img-grid {
@@ -864,19 +891,22 @@
   </style>
   <div class="container-fluid grid-images">
     <div class="container">
+      <div class="row gi-text">
+        <h4>We are Certified With </h4>
+      </div>
       <div class="row">
         <div class="img-grid grid">
           <div class="g_img">
             <img src="./assests_serviceparking/img/logos/2.png" class="img-fluid" alt="">
           </div>
            <div class="g_img">
-            <img src="./assests_serviceparking/img/logos/7.png" class="img-fluid" alt="">
+            <img src="./assests_serviceparking/img/logos/4.png" class="img-fluid" alt="">
           </div>
           <div class="g_img">
             <img src="./assests_serviceparking/img/logos/8.jpeg" class="img-fluid" alt="">
           </div>
           <div class="g_img">
-            <img src="./assests_serviceparking/img/logos/4.png" class="img-fluid" alt="">
+            <img src="./assests_serviceparking/img/logos/7.png" class="img-fluid" alt="">
           </div>
          
           <!-- <div class="g_img">
